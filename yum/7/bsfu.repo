@@ -51,10 +51,18 @@ baseurl=http://mirrors.bfsu.edu.cn/centos-vault/7.9.2009/fasttrack/$basearch/
 enabled=0
 gpgcheck=1
 gpgkey=http://mirrors.bfsu.edu.cn/centos-vault/RPM-GPG-KEY-CentOS-7
+# [epel]
+# name=EPEL for redhat/centos 7.9.2009 - $basearch
+# baseurl=http://mirrors.bfsu.edu.cn/epel/7/$basearch/
+# failovermethod=priority
+# enabled=1
+# gpgcheck=1
+# gpgkey=http://mirrors.bfsu.edu.cn/epel/RPM-GPG-KEY-EPEL-7
+# 腾讯epel
 [epel]
-name=EPEL for redhat/centos 7.9.2009 - $basearch
-baseurl=http://mirrors.bfsu.edu.cn/epel/7/$basearch/
+name=EPEL for redhat/centos $releasever - $basearch
+baseurl=http://mirrors.cloud.tencent.com/epel/$releasever/$basearch/
 failovermethod=priority
 enabled=1
 gpgcheck=1
-gpgkey=http://mirrors.bfsu.edu.cn/epel/RPM-GPG-KEY-EPEL-7
+gpgkey=http://mirrors.cloud.tencent.com/epel/RPM-GPG-KEY-EPEL-7
