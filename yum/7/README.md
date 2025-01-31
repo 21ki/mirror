@@ -7,11 +7,8 @@ yum -y install http://mirrors.cloud.tencent.com/centos/7/os/x86_64/Packages/cent
 yum clean all
 yum makecache
 rpm -e --nodeps epel-release
-yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum -y install https://archives.fedoraproject.org/pub/archive/epel/7/x86_64/Packages/e/epel-release-7-14.noarch.rpm
 yum clean all
 yum makecache
-sed -i -e '/^mirrorlist/d;/^#baseurl=/{s,^#,,;s,/epel,/archive/epel,;}' /etc/yum.repos.d/epel*.repo
-
-
 sed -i -e '/^mirrorlist/d;/^#baseurl=/{s,^#,,;s,/mirror,/vault,;}' /etc/yum.repos.d/CentOS*.repo
 ```
