@@ -46,7 +46,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 name=Extra Packages for Enterprise Linux $releasever - $basearch
 # It is much more secure to use the metalink, but if you wish to use a local mirror
 # place its address here.
-baseurl=https://mirrors.ustc.edu.cn/epel-archive/$releasever/Everything/$basearch/
+baseurl=https://mirrors.ustc.edu.cn/epel-archive/$releasever/$basearch/
 #metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-$releasever&arch=$basearch&infra=$infra&content=$contentdir
 enabled=1
 gpgcheck=1
@@ -57,7 +57,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-$releasever
 name=Extra Packages for Enterprise Linux $releasever - $basearch - Debug
 # It is much more secure to use the metalink, but if you wish to use a local mirror
 # place its address here.
-baseurl=https://mirrors.ustc.edu.cn/epel-archive/$releasever/Everything/$basearch/debug/
+baseurl=https://mirrors.ustc.edu.cn/epel-archive/$releasever/$basearch/debug/
 #metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-debug-$releasever&arch=$basearch&infra=$infra&content=$contentdir
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-$releasever
@@ -67,7 +67,7 @@ gpgcheck=1
 name=Extra Packages for Enterprise Linux $releasever - $basearch - Source
 # It is much more secure to use the metalink, but if you wish to use a local mirror
 # place its address here.
-baseurl=https://mirrors.ustc.edu.cn/epel-archive/$releasever/Everything/source/tree/
+baseurl=https://mirrors.ustc.edu.cn/epel-archive/$releasever/source/tree/
 #metalink=https://mirrors.fedoraproject.org/metalink?repo=epel-source-$releasever&arch=$basearch&infra=$infra&content=$contentdir
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-$releasever
