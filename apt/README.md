@@ -18,4 +18,8 @@ sed -i.bak "s|mirrors.bfsu.edu.cn|mirrors.tuna.tsinghua.edu.cn|g" /etc/apt/sourc
 # 切换debian版本
 sed -i.bak "s|bookworm|$(lsb_release -sc)|g" /etc/apt/sources.list.d/docker.list
 
+
+# ubuntu 22.04
+sed -i.$(date +%Y%m%d).bak "s|http://\(archive\|security\).ubuntu.com|https://mirrors.tuna.tsinghua.edu.cn|g" /etc/apt/*.list
+
 ```
